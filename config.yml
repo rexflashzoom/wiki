@@ -24,11 +24,11 @@ db:
   type: postgres
 
   # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
-  host: localhost
+  host: dpg-d13svd24d50c73eag4f0-a.singapore-postgres.render.com
   port: 5432
-  user: wikijs
-  pass: wikijsrocks
-  db: wiki
+  user: wiki_db_cx4r_user
+  pass: 6a6LKMWszAmefLJYPtwBpUmMMaCg3kSn
+  db: wiki_db_cx4r
   ssl: false
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
