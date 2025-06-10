@@ -29,13 +29,13 @@ db:
   user: wiki_db_cx4r_user
   pass: 6a6LKMWszAmefLJYPtwBpUmMMaCg3kSn
   db: wiki_db_cx4r
-  ssl: false
+  ssl: true
 
   # Optional - PostgreSQL / MySQL / MariaDB only:
   # -> Uncomment lines you need below and set `auto` to false
   # -> Full list of accepted options: https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options
   sslOptions:
-    auto: true
+    auto: false
     # rejectUnauthorized: false
     # ca: path/to/ca.crt
     # cert: path/to/cert.crt
@@ -60,30 +60,6 @@ db:
 # Consider using a reverse proxy (e.g. nginx) if you require more
 # advanced options than those provided below.
 
-ssl:
-  enabled: false
-  port: 3443
-
-  # Provider to use, possible values: custom, letsencrypt
-  provider: custom
-
-  # ++++++ For custom only ++++++
-  # Certificate format, either 'pem' or 'pfx':
-  format: pem
-  # Using PEM format:
-  key: path/to/key.pem
-  cert: path/to/cert.pem
-  # Using PFX format:
-  pfx: path/to/cert.pfx
-  # Passphrase when using encrypted PEM / PFX keys (default: null):
-  passphrase: null
-  # Diffie Hellman parameters, with key length being greater or equal
-  # to 1024 bits (default: null):
-  dhparam: null
-
-  # ++++++ For letsencrypt only ++++++
-  domain: wiki.yourdomain.com
-  subscriberEmail: admin@example.com
 
 # ---------------------------------------------------------------------
 # Database Pool Options
